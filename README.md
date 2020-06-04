@@ -1,7 +1,7 @@
 # CONE-Align
 This is a reference implementation for CONE-Align, an unsupervised network alignment method that uses node embeddings to model intra-graph node proximity and then aligns the embedding subspaces to make the node embeddings comparable across graphs.
 
-**Acknowledgement**: part of this code base were adapted from <a href="https://github.com/xptree/NetMF/blob/master/netmf.py">node embeddings</a> and <a href="https://github.com/facebookresearch/fastText/tree/master/alignment">subspace alignment</a>.
+**Acknowledgement**: parts of this code base were adapted from <a href="https://github.com/xptree/NetMF/blob/master/netmf.py">node embeddings</a> and <a href="https://github.com/facebookresearch/fastText/tree/master/alignment">subspace alignment</a>.
 
 **Usage**: python3 conealign.py --true_align data/synthetic-combined/arenas/arenas950-1/arenas_edges-mapping-permutation.txt --combined_graph data/synthetic-combined/arenas/arenas950-1/arenas_combined_edges.txt --output_stats output/stats/arenas/arenas950_1.log --store_align --output_alignment output/alignment_matrix/arenas/arenas950-1 --embmethod netMF --store_emb --embeddingA emb/netMF/arenas/arenas950-1.graph1.npy --embeddingB emb/netMF/large/arenas950-1.graph2.npy
 
