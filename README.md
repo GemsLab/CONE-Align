@@ -3,8 +3,10 @@ This is a reference implementation for CONE-Align, an unsupervised network align
 
 **Acknowledgement**: parts of this code base were adapted from <a href="https://github.com/xptree/NetMF/blob/master/netmf.py">node embeddings</a> and <a href="https://github.com/facebookresearch/fastText/tree/master/alignment">subspace alignment</a>.
 
-**Usage**: python3 conealign.py --true_align data/synthetic-combined/arenas/arenas950-1/arenas_edges-mapping-permutation.txt --combined_graph data/synthetic-combined/arenas/arenas950-1/arenas_combined_edges.txt --output_stats output/stats/arenas/arenas950_1.log --store_align --output_alignment output/alignment_matrix/arenas/arenas950-1 --embmethod netMF --store_emb --embeddingA emb/netMF/arenas/arenas950-1.graph1.npy --embeddingB emb/netMF/large/arenas950-1.graph2.npy
+**Usage**: python conealign.py --true_align data/synthetic-combined/arenas/arenas950-1/arenas_edges-mapping-permutation.txt --combined_graph data/synthetic-combined/arenas/arenas950-1/arenas_combined_edges.txt --output_stats output/stats/arenas/arenas950_1.log --store_align --output_alignment output/alignment_matrix/arenas/arenas950-1 --embmethod netMF --store_emb --embeddingA emb/netMF/arenas/arenas950-1.graph1.npy --embeddingB emb/netMF/large/arenas950-1.graph2.npy
 
+* Run the script with Python2
+* Pass the path to the true alignment file as a command line argument to conealign.py with the --true_align flag
 * Pass the path to the true alignment file as a command line argument to conealign.py with the --true_align flag
 * Pass the path to the edgelist file of the combined input graph as a command line argument to conealign.py with the --input flag
 * Specify a file to save the alignment accuracy and run time (in seconds) to with an --output_stats flag
