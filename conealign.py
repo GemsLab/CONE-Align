@@ -154,7 +154,9 @@ def kd_align(emb1, emb2, normalize=False, distance_metric="euclidean", num_top=1
 def main(args):
     true_align_name = args.true_align
     with open(true_align_name, "rb") as true_alignments_file:
-        true_align = pickle.load(true_alignments_file, encoding="bytes")
+        true_align = pickle.load(true_alignments_file)
+        
+#         true_align = pickle.load(true_alignments_file, encoding="bytes")
 
     before_emb = time.time()
     combined_graph_name = args.combined_graph
